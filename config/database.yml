@@ -85,8 +85,11 @@ production:
   adapter: postgresql
   encoding: unicode
   pool: 5
+  url: <%= ENV['DATABASE_URL'] %>
   database: <%= ENV['PGDATABASE'] %>
   username: <%= ENV['PGUSER'] %>
   password: <%= ENV['PGPASSWORD'] %>
   host: <%= ENV['PGHOST'] %>
   port: <%= ENV['PGPORT'] || 5432 %>
+
+
