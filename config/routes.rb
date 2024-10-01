@@ -13,5 +13,3 @@ Rails.application.routes.draw do
   # Defines the root path route ("/")
   root "avatars#index"
 end
-"Agregando controlador con acción index y captura de avatars.
-Además se modifica el seed.rb"
