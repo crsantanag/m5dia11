@@ -1,7 +1,7 @@
 databases:
-  - name: mysite
-    databaseName: mysite
-    user: mysite
+  - name: dpg-cru32i2j1k6c73blo5q0-a
+    databaseName: m5dia11
+    user: m5dia11_user
     plan: free
 
 services:
@@ -11,7 +11,7 @@ services:
     plan: free
     buildCommand: "./bin/render-build.sh"
     # preDeployCommand: "bundle exec rails db:migrate" # preDeployCommand only available on paid instance types
-    startCommand: "bundle exec rails db:migrate && bundle exec rails db:seed && bundle exec rails server"
+    startCommand: "bundle exec rails db:migrate && bundle exec rails server"
 
     envVars:
       - key: DATABASE_URL
